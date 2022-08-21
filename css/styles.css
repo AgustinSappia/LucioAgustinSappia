@@ -60,8 +60,9 @@ header{
         list-style: none;
         font-size: 0.6rem;
         margin: 1rem;
-        
-       
+        display: flex;
+       justify-content: center;
+       align-items: center;
         
         
        
@@ -69,13 +70,7 @@ header{
         
     }
     header ul li a{
-        display: flex;
-        height: 4rem;
-        width: 4rem;
-        border-radius: 50%;
-        flex-direction: column;
-        justify-content: space-around;
-        text-align: center;
+  
     }
 
 
@@ -298,13 +293,7 @@ margin: 2rem;
         margin: 3%;
     }
     header ul li a{
-        display: flex;
-        height: 4rem;
-        width: 4rem;
-        border-radius: 50%;
-        flex-direction: column;
-        justify-content: space-around;
-        text-align: center;
+
     }
 
 
