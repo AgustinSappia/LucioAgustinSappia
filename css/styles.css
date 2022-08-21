@@ -110,23 +110,9 @@ body footer div p {
 
 
 /*Index*/
-    .ul-index{
-        text-align: center;
-
-    }
-
-    .li-index{
-        display: flex;
-        
-        align-items: center;
-        justify-content: center;
-        height: 6rem;
-        width: 100%;
-        border-bottom: 1px black solid;
-        background-color: #d4c098;
-        
-        font-size: 30px;
-    }
+.list-group-item{
+   font-size: 40px;
+}
 
 
 /*Contacto*/
