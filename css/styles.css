@@ -63,6 +63,7 @@ header{
         display: flex;
        justify-content: center;
        align-items: center;
+       
         
         
        
@@ -239,10 +240,12 @@ margin: 2rem;
 
     }
     header ul li{ 
-        padding: 0.7rem;
+        padding: 0.9rem;
         list-style: none;
-        font-size: 0.6rem;
+        font-size: 0.9rem;
         margin: 3%;
+        height: 5rem;
+        width: 5rem;
     }
     header ul li a{
 
