@@ -1,3 +1,7 @@
+//variables
+$color-principal: rgb(193, 193, 143);
+
+
 /*reset*/
 
 *{
@@ -9,7 +13,7 @@
 /*color de fondo */ /* configuraciones del body*/
 
 body{
-    background-image: linear-gradient(to top, #c1c18f, #f7f6e4);
+    background-image: linear-gradient(to top, $color-principal, #f7f6e4);
 }
 
 /* configuraciones del header */
@@ -41,7 +45,7 @@ header{
         top: 1rem; 
         /* configuracion del menu */
         li{ 
-            background-color: #c1c18f;
+            background-color: $color-principal;
             height: 4rem;
             border-radius: 50%;
             width: 4rem;
