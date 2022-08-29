@@ -176,13 +176,11 @@ transition: all .2s ease-in-out;
 
 .imagen-info{
    grid-area: foto;
-   animation: slideInLeft;
-    animation-duration: 2s;
+
 }
 .titulo-info{
     grid-area: titulo;
-    animation: slideInRight;
-    animation-duration: 2s;
+
     font-family: map-get($map: $base, $key: font-fam);
     color: map-get($map: $base, $key: color-letra-base);
   
