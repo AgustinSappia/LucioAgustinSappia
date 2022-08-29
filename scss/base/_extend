@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: center; 
-}
+};
 %grid-centro {
     display: grid;
     align-items: center;

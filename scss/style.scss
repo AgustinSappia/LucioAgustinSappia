@@ -106,6 +106,7 @@ body footer{
 /*Index*/
 .list-group-item{
    font-size: 40px;
+   color: map-get($map: $base, $key: color-letra-base);
 }
 
 
@@ -205,7 +206,9 @@ margin: 2rem;
 
 
     body header{
-        @extend %grid-centro;
+        display: grid;
+        align-items: center;
+        justify-content: center;
         grid-row: 1fr;
         grid-column: 1fr 1fr;
         grid-template-areas: "foto menu"; 
@@ -240,7 +243,9 @@ margin: 2rem;
 
 
     .informacion1{
-        @extend %grid-centro;
+        display: grid;
+        align-items: center;
+        justify-content: center;
         grid-template-columns: 0.5fr 0.5fr 
         ;
         grid-template-rows: 0.5fr 1fr ;

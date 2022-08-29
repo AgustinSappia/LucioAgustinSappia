@@ -3,6 +3,11 @@ header, header #imagen-menu, header ul li, body footer {
   align-items: center;
   justify-content: center; }
 
+.imagenes, .informacion1 {
+  display: grid;
+  align-items: center;
+  justify-content: center; }
+
 /*reset*/
 * {
   margin: 0;
@@ -66,7 +71,8 @@ body footer {
 
 /*Index*/
 .list-group-item {
-  font-size: 40px; }
+  font-size: 40px;
+  color: #4B4B4B; }
 
 /*Contacto*/
 body main h1 {
@@ -75,13 +81,10 @@ body main h1 {
 
 /*Catalogo*/
 .imagenes {
-  display: grid;
   grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
   gap: 1rem;
   /*espacio entre columnas*/
-  grid-auto-rows: 22rem;
-  align-items: center;
-  justify-items: center; }
+  grid-auto-rows: 22rem; }
 
 div img {
   height: 15rem;
@@ -102,12 +105,9 @@ div iframe {
 
 /*informacion*/
 .informacion1 {
-  display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 0.4fr 0.6fr;
   grid-template-areas: "foto" "titulo" "parrafo";
-  align-items: center;
-  justify-items: center;
   margin-top: 1rem;
   width: 95%; }
 
@@ -137,10 +137,11 @@ div iframe {
 @media screen and (min-width: 700px) {
   body header {
     display: grid;
+    align-items: center;
+    justify-content: center;
     grid-row: 1fr;
     grid-column: 1fr 1fr;
     grid-template-areas: "foto menu";
-    align-items: center;
     justify-content: stretch; }
     body header .imagen-menu {
       display: flex;
@@ -162,6 +163,9 @@ div iframe {
         width: 5rem; }
   /* informacion */
   .informacion1 {
+    display: grid;
+    align-items: center;
+    justify-content: center;
     grid-template-columns: 0.5fr 0.5fr;
     grid-template-rows: 0.5fr 1fr;
     grid-template-areas: "foto titulo" "parrafo parrafo";
