@@ -1,5 +1,6 @@
 @import "base/variables";
 @import "base/mapas";
+@import "base/mixin";
 
 
 /*reset*/
@@ -136,8 +137,7 @@ body{
 
 
 div img{
-  width: 15rem;
-  height: 15rem;
+    @include medidas-mult(15rem,15rem);
     
   transition: all .2s ease-in-out;
 }
@@ -153,8 +153,7 @@ div img:hover{
 /* videos */
 
 div iframe{
-width: 15rem;
-height: 15rem;
+@include medidas-mult(15rem,15rem);
 transition: all .2s ease-in-out;
 }
 
