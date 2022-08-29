@@ -43,7 +43,8 @@ header {
       margin: 1rem;
       display: flex;
       justify-content: center;
-      align-items: center; }
+      align-items: center;
+      font-family: ma; }
 
 /*footer*/
 body footer {

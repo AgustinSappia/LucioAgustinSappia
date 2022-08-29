@@ -1,5 +1,4 @@
-//variables
-$color-principal: rgb(193, 193, 143);
+@import "base/variables";
 
 
 /*reset*/
@@ -55,6 +54,8 @@ header{
             display: flex;
             justify-content: center;
             align-items: center;
+            font-family: map-get($map: $base , $key: font-family );
+            
          }
         
     }
