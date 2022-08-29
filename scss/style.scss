@@ -76,10 +76,12 @@ body footer{
    flex-direction: column;
    align-items: center;
    justify-content: center;
+   margin-top: 1rem;
    div{
        display: flex;
        width: 100%;
        height: 10rem;
+       
        iframe{
            display: flex;
            width: 100%;
@@ -87,6 +89,8 @@ body footer{
        }
        p {
            text-align: center;
+           font-family: map-get($map: $base, $key: font-fam);
+           color: map-get($map: $base, $key: color-letra-base );
        }
    }
 }
@@ -108,6 +112,14 @@ body footer{
 
 
 /*Contacto*/
+body{
+    main{
+        h1{
+            font-family: map-get($map: $base, $key: font-fam);
+            color: map-get($map: $base, $key: color-letra-base);
+        }
+    }
+}
 
 
 /*Catalogo*/
@@ -151,7 +163,7 @@ transition: all .2s ease-in-out;
 .informacion1{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 0.2fr 0.4fr;
+    grid-template-rows: 1fr 0.4fr 0.6fr;
     grid-template-areas: "foto"
                          "titulo"
                          "parrafo";
@@ -171,15 +183,21 @@ transition: all .2s ease-in-out;
     grid-area: titulo;
     animation: slideInRight;
     animation-duration: 2s;
+    font-family: map-get($map: $base, $key: font-fam);
+    color: map-get($map: $base, $key: color-letra-base);
   
     
 }
 .parrafo-info{
    grid-area: parrafo;
+   font-family: map-get($map: $base, $key: font-fam);
+   color: map-get($map: $base, $key: color-letra-base);
 }
 .elemento-lista{
     display: inline-block;
     margin: 0.5rem;
+    font-family: map-get($map: $base, $key: font-fam);
+    color: map-get($map: $base, $key: color-letra-base);
 }
 .lista-redes{
 margin: 2rem;
