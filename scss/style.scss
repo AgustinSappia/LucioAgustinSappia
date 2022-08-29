@@ -20,22 +20,20 @@ body{
 
 /* configuraciones del header */
 header{
-    display: flex;
+    @extend %flex-centro;
     background-color: white;
     border-bottom: 1px black solid;
     flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+
 
     /*Configuracion de la imagen de inicio*/
     #imagen-menu{
         margin: 0;
         padding: 0;
-        display: flex;
+        @extend %flex-centro;
        height: 100%;
        width: 100%;
-       align-items: center;
-       justify-content: center;
+
 
     }
     
@@ -54,9 +52,7 @@ header{
             list-style: none;
             font-size: 0.6rem;
             margin: 1rem;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+   @extend %flex-centro;
             a{
                 font-family: map-get($map: $base, $key: font-fam);
                 color: map-get($map: $base, $key:color-letra-base );
@@ -74,12 +70,11 @@ header{
 /*footer*/
 
 body footer{
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   justify-content: center;
-   margin-top: 1rem;
 
+   flex-direction: column;
+
+   margin-top: 1rem;
+    @extend %flex-centro;
    div{
        display: flex;
        width: 100%;
