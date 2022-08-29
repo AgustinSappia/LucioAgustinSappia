@@ -1,0 +1,4 @@
+%flex-centro {
+    align-items: center;
+    justify-content: center; 
+}
