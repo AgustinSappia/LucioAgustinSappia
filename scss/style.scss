@@ -1,4 +1,5 @@
 @import "base/variables";
+@import "base/mapas";
 
 
 /*reset*/
@@ -54,9 +55,16 @@ header{
             display: flex;
             justify-content: center;
             align-items: center;
-            font-family: map-get($map: $base , $key: font-family );
+            a{
+                font-family: map-get($map: $base, $key: font-fam);
+                color: map-get($map: $base, $key:color-letra-base );
+            }
+        }
+        
+        
+                
             
-         }
+            
         
     }
 }

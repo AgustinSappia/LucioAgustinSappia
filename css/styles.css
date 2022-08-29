@@ -43,8 +43,10 @@ header {
       margin: 1rem;
       display: flex;
       justify-content: center;
-      align-items: center;
-      font-family: ma; }
+      align-items: center; }
+      header ul li a {
+        font-family: "Karma", serif;
+        color: #4B4B4B; }
 
 /*footer*/
 body footer {
