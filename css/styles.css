@@ -162,12 +162,9 @@ div iframe {
         width: 5rem; }
   /* informacion */
   .informacion1 {
-    display: grid;
     grid-template-columns: 0.5fr 0.5fr;
     grid-template-rows: 0.5fr 1fr;
     grid-template-areas: "foto titulo" "parrafo parrafo";
-    align-items: center;
-    justify-items: center;
     margin-top: 1rem;
     width: 95%; }
   .imagen-info {

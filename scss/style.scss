@@ -123,13 +123,12 @@ body{
 /*Catalogo*/
 
 .imagenes{
-    display: grid;
+    @extend %grid-centro;
     grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
     ;
     gap: 1rem;  /*espacio entre columnas*/
     grid-auto-rows: 22rem;
-    align-items: center;
-    justify-items: center;
+
 }
 
 
@@ -157,15 +156,14 @@ transition: all .2s ease-in-out;
 
 /*informacion*/
 .informacion1{
-    display: grid;
+    @extend %grid-centro;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 0.4fr 0.6fr;
     grid-template-areas: "foto"
                          "titulo"
                          "parrafo";
 
-    align-items: center;
-    justify-items: center;
+
     margin-top: 1rem;
     width: 95%;
 }
@@ -207,11 +205,11 @@ margin: 2rem;
 
 
     body header{
-        display: grid;
+        @extend %grid-centro;
         grid-row: 1fr;
         grid-column: 1fr 1fr;
         grid-template-areas: "foto menu"; 
-        align-items: center;
+
         justify-content: stretch;
         .imagen-menu{
             display: flex;
@@ -242,15 +240,12 @@ margin: 2rem;
 
 
     .informacion1{
-        display: grid;
+        @extend %grid-centro;
         grid-template-columns: 0.5fr 0.5fr 
         ;
         grid-template-rows: 0.5fr 1fr ;
         grid-template-areas: "foto titulo"
                              "parrafo parrafo";
-    
-        align-items: center;
-        justify-items: center;
         margin-top: 1rem;
         width: 95%;
      
