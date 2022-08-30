@@ -71,8 +71,10 @@ body footer {
 
 /*Index*/
 .list-group-item {
-  font-size: 40px;
-  color: #4B4B4B; }
+  font-size: 40px; }
+  .list-group-item a {
+    color: #4B4B4B;
+    font-family: "Karma", serif; }
 
 /*Contacto*/
 body main h1 {

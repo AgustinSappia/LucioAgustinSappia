@@ -106,7 +106,11 @@ body footer{
 /*Index*/
 .list-group-item{
    font-size: 40px;
-   color: map-get($map: $base, $key: color-letra-base);
+    a{
+    color: map-get($map: $base, $key: color-letra-base);
+    font-family: map-get($map: $base, $key: font-fam);
+   }
+   
 }
 
 
