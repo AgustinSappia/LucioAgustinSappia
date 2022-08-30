@@ -182,6 +182,7 @@ transition: all .2s ease-in-out;
 
     font-family: map-get($map: $base, $key: font-fam);
     color: map-get($map: $base, $key: color-letra-base);
+    font-size: 3rem;
   
     
 }
