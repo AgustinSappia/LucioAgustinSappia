@@ -175,6 +175,7 @@ transition: all .2s ease-in-out;
 
 .imagen-info{
    grid-area: foto;
+   justify-self: center;
 
 }
 .titulo-info{
@@ -183,6 +184,7 @@ transition: all .2s ease-in-out;
     font-family: map-get($map: $base, $key: font-fam);
     color: map-get($map: $base, $key: color-letra-base);
     font-size: 3rem;
+    justify-self: center;
   
     
 }
@@ -190,6 +192,7 @@ transition: all .2s ease-in-out;
    grid-area: parrafo;
    font-family: map-get($map: $base, $key: font-fam);
    color: map-get($map: $base, $key: color-letra-base);
+   justify-self: center;
 }
 .elemento-lista{
     display: inline-block;

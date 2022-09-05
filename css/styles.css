@@ -115,18 +115,21 @@ div iframe {
   width: 95%; }
 
 .imagen-info {
-  grid-area: foto; }
+  grid-area: foto;
+  justify-self: center; }
 
 .titulo-info {
   grid-area: titulo;
   font-family: "Karma", serif;
   color: #4B4B4B;
-  font-size: 3rem; }
+  font-size: 3rem;
+  justify-self: center; }
 
 .parrafo-info {
   grid-area: parrafo;
   font-family: "Karma", serif;
-  color: #4B4B4B; }
+  color: #4B4B4B;
+  justify-self: center; }
 
 .elemento-lista {
   display: inline-block;
