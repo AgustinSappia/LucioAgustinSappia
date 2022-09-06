@@ -52,7 +52,8 @@ header {
 /*footer*/
 body footer {
   background-color: #b9b8b8;
-  flex-direction: column; }
+  flex-direction: column;
+  padding-top: 1rem; }
   body footer div {
     display: flex;
     width: 100%;
