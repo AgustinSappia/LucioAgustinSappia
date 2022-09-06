@@ -70,28 +70,61 @@ header{
 /*footer*/
 
 body footer{
+    
+    background-color: rgb(185, 184, 184);
+    flex-direction: column;
+    padding-top: 1rem
+    
 
-   flex-direction: column;
-
-   margin-top: 1rem;
     @extend %flex-centro;
    div{
        display: flex;
        width: 100%;
        height: 10rem;
+       flex-direction: column;
+
+       
+       h3{
+        font-family: map-get($map: $base, $key: font-fam);
+        
+       }
+       
        
        iframe{
            display: flex;
            width: 100%;
            height: 10rem;
+           margin-top: 1rem;
        }
        p {
-           text-align: center;
+
+           
            font-family: map-get($map: $base, $key: font-fam);
            color: map-get($map: $base, $key: color-letra-base );
+           justify-content: center;
+
+           margin: 0 0.3rem 0 0.3rem;
+       }
+       ul{
+        padding-left: 2.5rem;
+            li{
+               color: white;
+
+               a{
+                color: black;
+                font-family: map-get($map: $base, $key: font-fam);
+               }
+            }
+            
        }
    }
+   .derecho{
+    justify-content: left;
+    align-items: center;
+    margin-top: 2rem;
+   }
 }
+
 
 
 
@@ -209,7 +242,7 @@ margin: 2rem;
 
 /*media queries*/
 
-@media screen and (min-width:800px)
+@media screen and (min-width:1000px)
 {
 
 
@@ -289,22 +322,29 @@ margin: 2rem;
             flex-direction: row;
             align-items: center;
             justify-content: center;
-           
+            iframe{
+                display: flex;
+                height: 10rem;
+            }
+            
             div{
                 
                 display: flex;
                 height: 10rem;
-                iframe{
-                    display: flex;
-                    height: 10rem;
-                    p {
-                        text-align: center;
-                    }
+                p {
+                    text-align: center;
+                    
                 }
+
             }
+
         }
         .desaparece{
-            display: block;
+            display: flex;
+            margin: 1rem;
+            align-items: center;
+            justify-content: center;
+
         }
         
                 
