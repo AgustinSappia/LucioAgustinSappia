@@ -150,9 +150,24 @@ body footer{
 /*Contacto*/
 body{
     main{
+
         h1{
             font-family: map-get($map: $base, $key: font-fam);
             color: map-get($map: $base, $key: color-letra-base);
+            margin-left: 15%;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            
+        }
+        .form-control{
+            width: 70%;
+            margin-left: 15%;
+        }
+        .btn.btn-primary{
+            margin-left: 15%;
         }
     }
 }
@@ -237,6 +252,15 @@ transition: all .2s ease-in-out;
 margin: 2rem;
 }
 
+/*mantenimineto*/
+
+.mantenimiento{
+    display: flex;
+    font-size: 4rem;
+    margin-bottom: 30rem;
+    height: 100%;
+}
+
 
 
 
@@ -313,6 +337,10 @@ margin: 2rem;
      .parrafo-info{
         grid-area: parrafo;
         text-align: center;
+        font-size: 1.5rem;
+     }
+     .elemento-lista{
+        font-size: 1.5rem;
      }
 
      /*footer*/

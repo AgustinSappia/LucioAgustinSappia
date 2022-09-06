@@ -96,7 +96,20 @@ body footer {
 /*Contacto*/
 body main h1 {
   font-family: "Karma", serif;
-  color: #4B4B4B; }
+  color: #4B4B4B;
+  margin-left: 15%; }
+
+body main form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+body main .form-control {
+  width: 70%;
+  margin-left: 15%; }
+
+body main .btn.btn-primary {
+  margin-left: 15%; }
 
 /*Catalogo*/
 .imagenes {
@@ -157,6 +170,13 @@ div iframe {
 .lista-redes {
   margin: 2rem; }
 
+/*mantenimineto*/
+.mantenimiento {
+  display: flex;
+  font-size: 4rem;
+  margin-bottom: 30rem;
+  height: 100%; }
+
 /*media queries*/
 @media screen and (min-width: 1000px) {
   body header {
@@ -203,7 +223,10 @@ div iframe {
     justify-self: start; }
   .parrafo-info {
     grid-area: parrafo;
-    text-align: center; }
+    text-align: center;
+    font-size: 1.5rem; }
+  .elemento-lista {
+    font-size: 1.5rem; }
   /*footer*/
   body footer {
     display: flex;
