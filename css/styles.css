@@ -1,4 +1,4 @@
-header, header #imagen-menu, header ul li, body footer {
+header, header #imagen-menu, header ul li, header ul li a, body footer {
   display: flex;
   align-items: center;
   justify-content: center; }
@@ -39,28 +39,34 @@ header {
     /* configuracion del menu */ }
     header ul li {
       background-color: #c1c18f;
-      height: 4rem;
+      height: 6rem;
       border-radius: 50%;
-      width: 4rem;
+      width: 6rem;
       list-style: none;
       font-size: 0.6rem;
       margin: 1rem; }
       header ul li a {
         font-family: "Karma", serif;
-        color: #4B4B4B; }
+        height: 6rem;
+        border-radius: 50%;
+        width: 6rem;
+        color: #4B4B4B;
+        font-size: 1rem; }
 
 /*footer*/
 body footer {
-  background-color: #b9b8b8;
+  display: flex;
+  background-image: url(../multimedia/imagenes/fondo-footer3.jpg);
   flex-direction: column;
-  padding-top: 1rem; }
+  padding-top: 1rem;
+  border-top: 1px solid gray; }
   body footer div {
     display: flex;
     width: 100%;
-    height: 10rem;
     flex-direction: column; }
     body footer div h3 {
-      font-family: "Karma", serif; }
+      font-family: "Karma", serif;
+      font-size: 2.5rem; }
     body footer div iframe {
       display: flex;
       width: 100%;
@@ -72,7 +78,8 @@ body footer {
       justify-content: center;
       margin: 0 0.3rem 0 0.3rem; }
     body footer div ul {
-      padding-left: 2.5rem; }
+      padding-left: 2.5rem;
+      font-size: 1.5rem; }
       body footer div ul li {
         color: white; }
         body footer div ul li a {
@@ -168,7 +175,8 @@ div iframe {
   color: #4B4B4B; }
 
 .lista-redes {
-  margin: 2rem; }
+  margin: 2rem;
+  margin-left: 13%; }
 
 /*mantenimineto*/
 .mantenimiento {
@@ -203,8 +211,8 @@ div iframe {
         list-style: none;
         font-size: 0.9rem;
         margin: 3%;
-        height: 5rem;
-        width: 5rem; }
+        height: 6rem;
+        width: 6rem; }
   /* informacion */
   .informacion1 {
     display: grid;
@@ -232,7 +240,8 @@ div iframe {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center; }
+    justify-content: center;
+    background-image: url(../multimedia/imagenes/fondo-footer3.jpg); }
     body footer iframe {
       display: flex;
       height: 10rem; }
@@ -241,6 +250,12 @@ div iframe {
       height: 10rem; }
       body footer div p {
         text-align: center; }
+      body footer div h3 {
+        font-size: 2rem; }
+      body footer div ul {
+        font-size: 1rem; }
+    body footer .derecho {
+      margin-top: 10px; }
   .desaparece {
     display: flex;
     margin: 1rem;

@@ -46,16 +46,21 @@ header{
         /* configuracion del menu */
         li{ 
             background-color: $color-principal;
-            height: 4rem;
+            height: 6rem;
             border-radius: 50%;
-            width: 4rem;
+            width: 6rem;
             list-style: none;
             font-size: 0.6rem;
             margin: 1rem;
    @extend %flex-centro;
             a{
+                @extend %flex-centro;
                 font-family: map-get($map: $base, $key: font-fam);
+                height: 6rem;
+                border-radius: 50%;
+                width: 6rem;
                 color: map-get($map: $base, $key:color-letra-base );
+                font-size: 1rem;
             }
         }
         
@@ -70,23 +75,22 @@ header{
 /*footer*/
 
 body footer{
-    
-    background-color: rgb(185, 184, 184);
+    display: flex;
+    background-image: url(../multimedia/imagenes/fondo-footer3.jpg);
     flex-direction: column;
     padding-top: 1rem;
-    
+    border-top: 1px solid gray;
 
     @extend %flex-centro;
    div{
        display: flex;
        width: 100%;
-       height: 10rem;
        flex-direction: column;
 
        
        h3{
         font-family: map-get($map: $base, $key: font-fam);
-        
+        font-size: 2.5rem;
        }
        
        
@@ -107,6 +111,7 @@ body footer{
        }
        ul{
         padding-left: 2.5rem;
+        font-size: 1.5rem;
             li{
                color: white;
 
@@ -250,6 +255,7 @@ transition: all .2s ease-in-out;
 }
 .lista-redes{
 margin: 2rem;
+margin-left: 13%;
 }
 
 /*mantenimineto*/
@@ -296,8 +302,8 @@ margin: 2rem;
                 list-style: none;
                 font-size: 0.9rem;
                 margin: 3%;
-                height: 5rem;
-                width: 5rem;
+                height: 6rem;
+                width: 6rem;
             }
         }
     }
@@ -350,10 +356,13 @@ margin: 2rem;
             flex-direction: row;
             align-items: center;
             justify-content: center;
+            background-image: url(../multimedia/imagenes/fondo-footer3.jpg);
+
             iframe{
                 display: flex;
                 height: 10rem;
             }
+
             
             div{
                 
@@ -363,7 +372,17 @@ margin: 2rem;
                     text-align: center;
                     
                 }
+                h3{
+                    font-size: 2rem;
+                }
+                ul{
+                    font-size: 1rem;
+                }
 
+
+            }
+            .derecho{
+                margin-top: 10px;
             }
 
         }
